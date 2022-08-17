@@ -1,0 +1,102 @@
+import { Injectable } from '@angular/core';
+import { Foods } from 'src/app/shared/modals/food';
+@Injectable({
+  providedIn: 'root'
+})
+export class FoodService {
+
+  constructor() { }
+
+  getAll():Foods[]{
+    return[
+      {
+        id:4,
+        price:55,
+        name:'burger',
+        favourite:true,
+        star:4,
+        tags:['junkfood','snacks','food'],
+        imageURL:'/assets/burger.jpg',
+        cooktime:'10-20',
+        origins:['Germany','india'],
+      }, 
+      {
+        id:1,
+        price:55,
+        name:'pizza',
+        favourite:false,
+        star:2,
+        tags:['junkfood','snacks','food'],
+        imageURL:'/assets/pizza.jpg',
+        cooktime:'10-20',
+        origins:['italy','america','India'],
+    },   
+    {
+      id:2,
+      price:155,
+      name:'cheesepizza',
+      favourite:true,
+      star:2.5,
+      tags:['junkfood','snacks','food'],
+      imageURL:'/assets/pizza2.jpg',
+      cooktime:'5-20',
+      origins:['Mexico','australia','neatherlands'],
+  },   
+  {
+    id:4,
+    price:55,
+    name:'Tomato Soup',
+    favourite:true,
+    star:4,
+    tags:['junkfood','snacks','food'],
+    imageURL:'/assets/tomatosoup.jpg',
+    cooktime:'10-20',
+    origins:['Germany','india'],
+  }, 
+  {
+    id:3,
+    price:255,
+    name:'minipizza',
+    favourite:false,
+    star:3,
+    tags:['junkfood','snacks','food'],
+    imageURL:'/assets/pizza3.jpg',
+    cooktime:'5-10',
+    origins:['America','newzealand'],
+},  
+{
+  id:1,
+  price:55,
+  name:'Muttonballs',
+  favourite:false,
+  star:2,
+  tags:['junkfood','snacks','food'],
+  imageURL:'/assets/muttonballs.jpg',
+  cooktime:'10-20',
+  origins:['italy','america','India'],
+},    
+{
+  id:4,
+  price:55,
+  name:'burger',
+  favourite:true,
+  star:4,
+  tags:['junkfood','snacks','food'],
+  imageURL:'/assets/burger.jpg',
+  cooktime:'10-20',
+  origins:['Germany','india'],
+},   
+{
+  id:1,
+  price:55,
+  name:'frenchFries',
+  favourite:false,
+  star:2,
+  tags:['junkfood','snacks','food'],
+  imageURL:'/assets/frenchfries.jpeg',
+  cooktime:'10-20',
+  origins:['italy','america','India'],
+},   
+    ]
+  }
+}
